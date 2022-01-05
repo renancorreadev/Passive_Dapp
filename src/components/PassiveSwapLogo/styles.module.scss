@@ -1,0 +1,31 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-weight: bold;
+        color: var(--purple);
+        span{
+            color: var(--background);
+    
+            background: linear-gradient(90deg, var(--purple), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 3px transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+    }
+    
+    >p{
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+        span{
+            align-self: center;
+            margin-right: 0.2rem;
+            font-weight: lighter;
+            font-size: 0.7rem;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.card{
+    background: var(--medium-purple);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.2rem;
+    height: 200px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cardLogo{
+        background: var(--background);
+        padding: 1rem;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: circle();
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+@media(max-width: 768px){
+    .card{
+        height: 100%;
+    }
+}

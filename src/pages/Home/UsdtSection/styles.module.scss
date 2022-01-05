@@ -1,0 +1,50 @@
+.section{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--section-background);
+
+    h1{
+
+        font-size: 6rem;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--purple), var(--pink));
+        }
+    }
+
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+    
+    img{
+        height: 12.5rem;
+    }
+
+    .gradientText{
+        background: linear-gradient(90deg, var(--purple), var(--pink));
+        background-clip: text;
+        font-weight: bold;
+        color: transparent;
+    }
+
+    .textBold{
+        font-weight: bold;
+    }
+
+}

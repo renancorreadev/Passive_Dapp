@@ -1,0 +1,76 @@
+.section{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--section-background);
+
+    button{
+        padding: 2rem;
+        width: 60vw;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+    
+    .customLogo{
+        h1{
+            font-size: 5rem;
+        }
+    }
+
+    .gridThreeCol{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+        
+        img{
+            max-height: 50px;
+        }
+    }
+
+    .gridTwoCol{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px;
+        
+        img{
+            max-height: 80px;
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .section{
+
+        gap: 1rem;
+
+        .customLogo{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+
+        h2{
+            font-size: 1.7rem;
+        }
+
+        .gridThreeCol, .gridTwoCol{
+            flex-direction: column;
+            gap: 2rem;
+
+            img{
+                height: 200px;
+            }
+        }
+    }
+}

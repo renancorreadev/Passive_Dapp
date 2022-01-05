@@ -1,0 +1,15 @@
+.objective{
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    img{
+        height: 2rem;
+    }
+}
+
+@media(max-width:768px ){
+    .objective{
+        font-size: 2rem;
+    }
+}
